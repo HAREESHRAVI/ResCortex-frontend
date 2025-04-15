@@ -1,0 +1,46 @@
+.horizontal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 80px 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.metric-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-wrapper {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 10px;
+}
+
+.metric-label {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 30px;
+}

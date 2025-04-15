@@ -1,0 +1,69 @@
+.abstract-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.abstract-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.abstract-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Adjusts the distance between title and underline */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: #4a4a4a; /* Color of the underline */
+}
+
+.abstract-content {
+  font-size: 1.125rem;
+  color: #4a4a4a;
+  max-width: 1000px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .abstract-title {
+    font-size: 1.75rem;
+  }
+
+  .abstract-content {
+    font-size: 1.05rem;
+    padding: 0 20px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .abstract-title {
+    font-size: 1.5rem;
+  }
+
+  .abstract-content {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+}
+
+/* Smallest phones */
+@media (max-width: 480px) {
+  .abstract-title {
+    font-size: 1.3rem;
+  }
+
+  .abstract-content {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+}

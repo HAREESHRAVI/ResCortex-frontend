@@ -1,0 +1,110 @@
+.footer {
+  background-color: #0b0b0c;
+  padding: 20px 20px 10px; /* reduced padding */
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px; /* reduced margin */
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  text-align: center;
+  padding: 6px;
+  font-size: 1.2rem;
+}
+
+.footer-left {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.8rem; /* increased size for ResCortex */
+  color: #ffffff;
+}
+
+.footer-center {
+  font-weight: 600;
+  color: #ccc;
+}
+
+.footer-center .highlight {
+  color: #ffb347;
+}
+
+.footer-right {
+  text-align: right;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 1rem;
+  background: linear-gradient(to right, #a855f7, #ec4899, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .footer-left {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: unset;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .footer-left {
+    font-size: 1.3rem;
+  }
+}
+
+/* Smallest Phones */
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px 10px 8px;
+  }
+
+  .footer-left {
+    font-size: 1.2rem;
+  }
+
+  .footer-center,
+  .footer-right {
+    font-size: 0.95rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.9rem;
+  }
+}

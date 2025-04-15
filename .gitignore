@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+venv/
+
+# React
+node_modules/
+build/
+*.env
+.DS_Store
+package-lock.json
+
+# VSCode
+.vscode/
+
+# MacOS
+*.swp
+*.swo

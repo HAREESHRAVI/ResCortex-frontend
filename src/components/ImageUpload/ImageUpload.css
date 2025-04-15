@@ -1,0 +1,139 @@
+.upload-container {
+  display: flex;
+  flex-direction: column; /* Ensures vertical stacking */
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.upload-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  padding: 50px 35px;
+  text-align: center;
+  width: 100%;
+  max-width: 450px; /* Increased max-width for better layout */
+  border: 2px solid #e0e0e0; /* Light border around card */
+  transition: box-shadow 0.3s ease; /* Smooth shadow effect */
+}
+
+.upload-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Card shadow on hover */
+}
+
+.upload-card h2 {
+  font-size: 2rem; /* Increased title size */
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: bold; /* Make title bold */
+}
+
+.file-input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.file-input:hover,
+.file-input:focus {
+  border-color: #4a90e2; /* Highlight border on focus/hover */
+  outline: none; /* Remove default outline */
+}
+
+.upload-button {
+  padding: 20px 40px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem; /* Slightly larger button text */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.upload-button:hover {
+  transform: scale(1.05); /* Smooth scaling effect on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Button shadow on hover */
+}
+
+.upload-button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+.upload-button:focus {
+  outline: none; /* Remove the focus outline for a cleaner look */
+}
+
+#description {
+  line-height: 1.5;
+}
+
+.predict-button {
+  font-size: 18px;
+  padding: 15px 30px;
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.predict-button:hover {
+  background-color: #292827;
+  transform: scale(1.1);
+}
+
+.loader-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #000000;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 10px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .upload-card {
+    padding: 30px 20px; /* Reduce padding on smaller screens */
+    max-width: 90%; /* Ensure the card takes up most of the width */
+  }
+
+  .upload-card h2 {
+    font-size: 1.5rem; /* Smaller title on mobile */
+  }
+
+  .file-input {
+    padding: 10px; /* Adjust padding for input on mobile */
+  }
+
+  .upload-button {
+    padding: 12px 25px; /* Smaller button on mobile */
+    font-size: 1rem; /* Adjust font size for button */
+  }
+}
