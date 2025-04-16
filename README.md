@@ -36,7 +36,7 @@ We used the Brain Tumor MRI dataset containing T1-weighted contrast-enhanced MRI
 ## Model Performance
 
 - **Validation Accuracy:** >94%  
-- **F1 Score:** ~91  
+- **F1 Score:** ~89%
 - **Optimizer:** Adam  
 - **Loss Function:** Categorical Crossentropy with Label Smoothing  
 - **Features:** Class Weights, Early Stopping, Model Checkpointing  
