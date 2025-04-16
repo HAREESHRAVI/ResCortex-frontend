@@ -7,7 +7,6 @@ const ImageUpload = () => {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  // ✅ Replace with your deployed backend URL
   const BACKEND_URL = "https://rescortex-backend.onrender.com/api/predict";
 
   const handlePredict = async () => {
@@ -20,7 +19,7 @@ const ImageUpload = () => {
     formData.append("image", image);
 
     setLoading(true);
-    setResult(null); // Clear previous result
+    setResult(null); 
 
     try {
       const response = await fetch(BACKEND_URL, {
@@ -31,11 +30,8 @@ const ImageUpload = () => {
       const data = await response.json();
 
       if (response.ok) {
-        // Simulate 5-second delay before showing result
-        setTimeout(() => {
-          setResult(data);
-          setLoading(false);
-        }, 5000);
+        setResult(data);
+        setLoading(false);
       } else {
         console.error("Prediction error:", data.error);
         alert("Prediction failed. Please try again.");
