@@ -30,8 +30,11 @@ const ImageUpload = () => {
       const data = await response.json();
 
       if (response.ok) {
-        setResult(data);
-        setLoading(false);
+        // 4-second delay before showing result
+        setTimeout(() => {
+          setResult(data);
+          setLoading(false);
+        }, 4000);
       } else {
         console.error("Prediction error:", data.error);
         alert("Prediction failed. Please try again.");
